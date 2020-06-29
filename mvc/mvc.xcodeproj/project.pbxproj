@@ -13,6 +13,8 @@
 		1A8809BC24A9D8FC00049817 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A8809BA24A9D8FC00049817 /* Main.storyboard */; };
 		1A8809BE24A9D90000049817 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A8809BD24A9D90000049817 /* Assets.xcassets */; };
 		1A8809C124A9D90000049817 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A8809BF24A9D90000049817 /* LaunchScreen.storyboard */; };
+		1A8809CC24A9DC3F00049817 /* AppleProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8809CB24A9DC3F00049817 /* AppleProduct.swift */; };
+		1A8809CE24A9DFEC00049817 /* CustomPrettyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8809CD24A9DFEC00049817 /* CustomPrettyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		1A8809BD24A9D90000049817 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A8809C024A9D90000049817 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A8809C224A9D90000049817 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A8809CB24A9DC3F00049817 /* AppleProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleProduct.swift; sourceTree = "<group>"; };
+		1A8809CD24A9DFEC00049817 /* CustomPrettyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPrettyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		1A8809B324A9D8FB00049817 /* mvc */ = {
 			isa = PBXGroup;
 			children = (
+				1A8809CA24A9DAC700049817 /* Model */,
+				1A8809C924A9DAC000049817 /* View */,
+				1A8809C824A9DAA700049817 /* Controller */,
 				1A8809B424A9D8FB00049817 /* AppDelegate.swift */,
 				1A8809B624A9D8FB00049817 /* SceneDelegate.swift */,
-				1A8809B824A9D8FB00049817 /* ViewController.swift */,
 				1A8809BA24A9D8FC00049817 /* Main.storyboard */,
 				1A8809BD24A9D90000049817 /* Assets.xcassets */,
 				1A8809BF24A9D90000049817 /* LaunchScreen.storyboard */,
 				1A8809C224A9D90000049817 /* Info.plist */,
 			);
 			path = mvc;
+			sourceTree = "<group>";
+		};
+		1A8809C824A9DAA700049817 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1A8809B824A9D8FB00049817 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1A8809C924A9DAC000049817 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1A8809CD24A9DFEC00049817 /* CustomPrettyView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1A8809CA24A9DAC700049817 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1A8809CB24A9DC3F00049817 /* AppleProduct.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A8809CC24A9DC3F00049817 /* AppleProduct.swift in Sources */,
 				1A8809B924A9D8FB00049817 /* ViewController.swift in Sources */,
+				1A8809CE24A9DFEC00049817 /* CustomPrettyView.swift in Sources */,
 				1A8809B524A9D8FB00049817 /* AppDelegate.swift in Sources */,
 				1A8809B724A9D8FB00049817 /* SceneDelegate.swift in Sources */,
 			);
@@ -291,7 +323,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mailys.mvc;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = mvc;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -308,7 +340,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mailys.mvc;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = mvc;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
