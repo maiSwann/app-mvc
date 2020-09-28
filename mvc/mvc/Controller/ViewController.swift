@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let appleProduct = AppleProduct(name: "Iphone X", color: "Space Grey", price: 999.99)
+        let appleProduct = AppleProduct(name: "Iphone X", color: "Space Grey", price: 546.99)
         
         iphoneNameLabel.text = appleProduct.name
         iphoneNameColor.text = "in \(appleProduct.color)"
