@@ -2,4 +2,4 @@
 
 Deal with the MVC pattern
 
-<img src="mvc.png" width="300">
+<img src="mvc.png" width="200">
